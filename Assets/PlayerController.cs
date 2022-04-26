@@ -20,6 +20,14 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody.AddForce(new Vector3(0, 0, 1) * power);
         }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            rigidbody.AddForce(new Vector3(0, 0, -1) * power);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            rigidbody.AddForce(new Vector3(1, 0, 1) * power);
+        }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rigidbody.AddForce(new Vector3(-1, 0, 0) * power);
